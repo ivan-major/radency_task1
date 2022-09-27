@@ -1,5 +1,6 @@
 NOTE APP
 - [DEMO LINK](https://ivan-major.github.io/radency_task1/)
+
 Tecnologies:
 - JS,
 - HTML,
