@@ -93,14 +93,14 @@ const updateTable = (item, status = "active") => {
 
 //Functionality of note changing
 tableTasks.addEventListener("click", (event) => {
-  if (event.target.matches(".delete")) {
+  if (event.target.matches(".icon_delete")) {
     const item = event.target.closest(".task");
 
     tasks = tasks.filter((task) => task.id !== +item.id);
     archivedTasks = archivedTasks.filter((task) => task.id !== +item.id);
   }
 
-  if (event.target.matches(".archive")) {
+  if (event.target.matches(".icon_archive")) {
     const item = event.target.closest(".task");
 
     tasks.forEach((task) => {
@@ -111,7 +111,7 @@ tableTasks.addEventListener("click", (event) => {
     });
   }
 
-  if (event.target.matches(".update")) {
+  if (event.target.matches(".icon_update")) {
     const item = event.target.closest(".task");
 
     formChange.classList.add("form_active");
