@@ -5,3 +5,196 @@
 body {
   background: $c-gray;
 }
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+
+  &__table {
+    display: flex;
+  }
+}
+
+.hometask {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  width: 100%;
+
+  &__title {
+    font-family: "Roboto";
+    background-color: #3f3e3e;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__item {
+    margin-top: 10px;
+    background-color: #a7b6da;
+  }
+}
+
+.title {
+  &__cell {
+    padding: 5px;
+
+    &_icons {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+
+    margin-right: 10px;
+  }
+}
+
+.task {
+  &__item {
+    padding: 5px;
+
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+
+    &_icons {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+    }
+
+    &_count {
+      text-align: center;
+    }
+  }
+
+  &__button {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: none;
+    margin-right: 10px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.name {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+
+    background-color: #656464;
+    border-radius: 50%;
+
+    display: flex;
+
+    margin-right: 10px;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      margin: auto;
+    }
+  }
+}
+
+.block-button {
+  margin-top: 10px;
+
+  display: flex;
+  justify-content: end;
+}
+
+.button {
+  font-family: "Roboto";
+  background-color: #3f3e3e;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &_update {
+    background-image: url(../images/pencil.svg);
+  }
+
+  &_archive {
+    background-image: url(../images/box-add.svg);
+  }
+
+  &_delete {
+    background-image: url(../images/bin.svg);
+  }
+}
+
+.form {
+  width: 600px;
+  background-color: $c-gray;
+  border: 1px solid #a7b6da;
+  padding: 10px;
+
+  border-radius: 10px;
+
+  &_add {
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  &_change {
+    width: 25%;
+    margin: 10px 0;
+    border-radius: 0;
+
+    display: none;
+  }
+
+  &_active {
+    display: block;
+  }
+
+  &__textaria {
+    height: 100px;
+  }
+
+  &__button {
+    margin-top: 20px;
+  }
+
+  &__close {
+    margin-bottom: 10px;
+  }
+}
+
+.btn-primary {
+  background-color: #a7b6da;
+  border-color: #a7b6da;
+}
